@@ -1,0 +1,105 @@
+buildscript {
+	ext {
+		queryDslVersion = "5.0.0"
+	}
+}
+
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.2.3'
+	id 'io.spring.dependency-management' version '1.1.4'
+
+}
+
+
+
+group = 'com'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'net.coobird:thumbnailator:0.4.19'
+
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+
+	implementation 'com.google.code.gson:gson:2.10.1'
+	implementation       'io.jsonwebtoken:jjwt-api:0.11.5'
+	runtimeOnly      'io.jsonwebtoken:jjwt-impl:0.11.5'
+	runtimeOnly      'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+	testCompileOnly 'org.projectlombok:lombok'
+	testAnnotationProcessor 'org.projectlombok:lombok'
+
+	implementation "com.querydsl:querydsl-jpa:${queryDslVersion}:jakarta"
+
+	annotationProcessor(
+			"jakarta.persistence:jakarta.persistence-api",
+			"jakarta.annotation:jakarta.annotation-api",
+			"com.querydsl:querydsl-apt:${queryDslVersion}:jakarta")
+	implementation 'org.modelmapper:modelmapper:3.1.0'
+	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.1.0'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
+
+	implementation 'net.coobird:thumbnailator:0.4.20'
+
+	implementation 'org.springframework.boot:spring-boot-starter-json'
+
+	implementation 'com.google.apis:google-api-services-dialogflow:v2beta1-rev15-1.23.0'
+
+	implementation platform('com.google.cloud:libraries-bom:25.4.0')
+
+
+	implementation 'com.google.cloud:google-cloud-dialogflow:2.0.0'
+	implementation 'com.google.cloud:google-cloud-storage:1.106.0'
+	implementation 'org.springframework.boot:spring-boot-starter-mail'
+
+
+
+
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+sourceSets {
+
+	main {
+		java {
+			srcDirs = ["$projectDir/src/main/java", "$projectDir/build/generated"]
+		}
+	}
+}
+
+
+compileJava.dependsOn('clean')
+
+apply plugin: 'java'
+
+compileJava {
+	options.compilerArgs << "-Xlint:unchecked"
+}

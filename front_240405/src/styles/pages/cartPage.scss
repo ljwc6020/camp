@@ -1,0 +1,221 @@
+.cart_index {
+  width: 100%;
+}
+.cart_title {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100 auto;
+  background-position: center; /* 배경 이미지의 위치를 가운데로 정렬 */
+  overflow: hidden; /* 세로로 넘치는 부분은 잘리게 처리 */
+  background-image: url(../../img/bg16.jpg);
+}
+.cart_title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.cart_title ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.cart_title ul li:first-child {
+  font-size: 40px;
+  font-family: "Gugi", sans-serif;
+  font-weight: 400;
+  color: black;
+}
+.cart_title ul li:nth-child(2) {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.cart_section {
+  width: 100%;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: none;
+}
+// 장바구니
+.cart-group {
+  width: 80%;
+}
+.cart-area {
+  display: flex;
+  margin-top: 8px;
+  .itemWrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .cartTotal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    width: 320px;
+    margin-left: 10px;
+  }
+}
+.itemWrap {
+  .cartLength {
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 5px 5px;
+  }
+  .cartMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 0 20px;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 13px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid #b5b5b5;
+    li {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+// 장바구니 아이템
+.cartItem-group {
+  width: 100%;
+  padding: 8px 0 8px;
+  font-size: 14px;
+}
+.cartItem-area {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  // line-height: 120px;
+  img {
+    width: 120px;
+    height: 0 auto;
+  }
+}
+.cartItemSelect,
+.cartMenu li:first-child {
+  width: 50px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+.cartItemImg,
+.cartMenu li:nth-child(2) {
+  width: 120px;
+  flex-shrink: 0;
+}
+.cartItemPname {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 30px;
+  font-family: "NanumSquareRound";
+  font-weight: bold;
+  font-size: 14px;
+}
+.cartMenu li:nth-child(3) {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+}
+.cartItemPrice,
+.cartItemQty,
+.cartItemTprice,
+.cartMenu li:nth-child(n + 4) {
+  width: 100px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+.cartItemDelete {
+  width: 100px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b5b5b5;
+  // border: 1px solid black;
+  button {
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    // border: 1px solid black;
+  }
+}
+
+.cartTprice {
+  width: 100%;
+  min-width: 180px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Noto Sans KR", sans-serif;
+  border: 1px solid black;
+  padding: 30px;
+}
+.cartPayment {
+  width: 100%;
+  min-width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  .cart_paymentBtn {
+    width: 100%;
+    height: 60px;
+    padding: 8px 16px;
+    border: none;
+    white-space: nowrap;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #efefef;
+  }
+}
+
+// 수량 버튼
+.cartItem-box {
+  display: flex;
+  .quantity_button {
+    width: 25px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-width: 1px 1px 1px 1px;
+    border-color: #efefef;
+    border-style: solid;
+    background-color: #fff;
+    cursor: pointer;
+    user-select: none;
+  }
+  .quantity_display {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-width: 1px 0 1px;
+    border-color: #efefef;
+    border-style: solid;
+    text-align: center;
+  }
+}

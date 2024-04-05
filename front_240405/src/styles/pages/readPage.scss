@@ -1,0 +1,42 @@
+.readPage_wrap {
+  padding: 16px;
+  width: 100%;
+  background-color: white;
+  .readPage_section {
+    width: 95%;
+  }
+}
+.reviewQna_section {
+  padding: 24px 100px;
+  width: 95%;
+  flex-direction: column;
+  background-color: white;
+  .reviewQna_Container {
+    display: flex;
+    justify-content: center;
+  }
+}
+.reviewQna_Btn {
+  display: flex;
+  button {
+    font-family: "NanumSquareRoundLight";
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &.active {
+      color: #fff;
+      background-color: #000;
+      // border-bottom: 2px solid #000;
+    }
+    &:not(.active) {
+      color: #9f9f9f;
+      border-bottom: 1px solid #eaeced;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

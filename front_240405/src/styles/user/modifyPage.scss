@@ -1,0 +1,31 @@
+.modifyWrap {
+  width: 100%;
+  height: 100vh;
+  //   background: url("../../img/bg8.jpg") center no-repeat;
+  //   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 80px;
+}
+
+.modifyTitle {
+  color: rgb(48, 45, 45);
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.modifyComponent {
+  width: 50%;
+}
+
+.errorMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1300px;
+  color: red;
+}

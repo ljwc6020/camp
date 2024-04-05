@@ -1,0 +1,76 @@
+.fmenu {
+  width: 90px;
+  height: 200px;
+  background: rgba(255, 250, 250, 0.85);
+  border: 1px solid rgba(173, 171, 171, 0.5);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 250px;
+  right: 10px;
+  transition: all 0.7s ease-in-out;
+}
+
+.btn-news,
+.btn-chat,
+.btn-top,
+.btn-close,
+.btn-open {
+  width: 100%;
+  color: rgb(62, 61, 61);
+  border-bottom: 1px solid rgba(173, 171, 171, 0.3);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn-news {
+  height: 35%;
+}
+
+.btn-chat {
+  height: 35%;
+}
+
+.btn-top {
+  height: 20%;
+}
+
+.btn-close {
+  height: 10%;
+}
+
+.btn-open {
+  display: none;
+  height: 10%;
+}
+
+//react 이벤트 발생 후
+.fmenu.closed {
+  height: 20px;
+}
+
+.fmenu.closed .btn-close {
+  display: none;
+}
+
+.fmenu.closed .btn-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.fmenu.closed .btn-news,
+.fmenu.closed .btn-chat,
+.fmenu.closed .btn-top {
+  display: none;
+}
+
+@media (max-width: 932px) {
+  .fmenu {
+    width: 80px;
+    height: 200px;
+    right: 20px;
+  }
+}

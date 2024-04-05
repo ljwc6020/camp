@@ -1,0 +1,241 @@
+#root {
+  background: snow;
+}
+
+.camping-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(210, 210, 210);
+  border-bottom: none;
+}
+
+.map-section {
+  width: 95%;
+  height: 1500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.map-container {
+  width: 45%;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../img/bg6.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.map::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.map ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.map ul li:first-child {
+  font-size: 40px;
+  font-family: "Gugi", sans-serif;
+  font-weight: 400;
+}
+
+.map ul li:nth-child(2) {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  // font-size: 20px;
+  // font-family: "Gugi", sans-serif;
+  // font-weight: 400;
+}
+
+#map {
+  width: 100%;
+  height: 1000px;
+}
+
+.map-section ul {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* 자식 요소들을 수직 방향으로 늘림 */
+  justify-content: space-between; /* 자식 요소들 간의 간격을 균등하게 설정 */
+  overflow-x: auto; /* 가로 스크롤바 추가 */
+  flex-wrap: nowrap; /* 줄 바꿈을 방지하여 pageNumList의 각 항목이 한 줄에 표시되도록 함 */
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.map-section ul li {
+  width: 100%;
+  height: max-content;
+}
+
+.map-section .camp-list {
+  height: 70%; /* CampList 컴포넌트가 차지하는 높이 */
+}
+
+.map-section li:first-child {
+  height: 50px;
+  display: flex;
+}
+
+.map-section input {
+  width: 80%;
+  // border: 1px solid rgba(128, 128, 128, 0.37);
+}
+
+.camp-btn {
+  width: 20%;
+  background: rgb(235, 178, 7);
+  // background: linear-gradient(rgb(253, 128, 79), rgb(253, 221, 104));
+  color: rgb(241, 238, 238);
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid rgb(235, 178, 7);
+  border-radius: 5%;
+  border-bottom: 1px solid rgba(88, 86, 86, 0.3);
+}
+
+.CampSite {
+  display: flex;
+  flex-direction: column;
+  background: rgba(245, 237, 237, 0.558);
+}
+
+.CampName {
+  width: 30%;
+  height: 250px;
+  background: rgb(235, 178, 7);
+  // background: linear-gradient(to right, #ff6200, #e0fc0e);
+  -webkit-background-clip: text;
+  color: transparent;
+
+  // background: rgba(7, 125, 48, 0.904);
+
+  // color: rgb(255, 255, 255);
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(88, 86, 86, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CampAddress {
+  width: 35%;
+  height: 250px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CampPhoto {
+  width: 35%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CampPhoto img {
+  width: 100%;
+  height: 250px;
+}
+
+.btn-section {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-section button {
+  width: 15%;
+  height: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.37);
+}
+
+.prev,
+.next {
+  background: rgb(235, 178, 7);
+  // background: linear-gradient(rgb(253, 128, 79), rgb(253, 221, 104));
+  color: rgb(255, 255, 255);
+}
+
+.page-btn {
+  background: white;
+  color: rgb(77, 77, 77);
+  font-weight: bold;
+}
+
+.infowindow {
+  font-size: 0.75rem;
+}
+
+/* 반응형 */
+@media (max-width: 932px) {
+  .map-section {
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .map-container {
+    width: 80%;
+  }
+
+  #map {
+    height: 550px;
+  }
+
+  .map-section ul {
+    width: 90%;
+    height: 600px;
+  }
+}
+
+.page-btn-highlighted {
+  background-color: #ffa500; /* 예시로 오렌지색 배경을 선택 */
+  color: #ffffff; /* 흰색 텍스트 색상 */
+  border: 1px solid #ffa500; /* 오렌지색 테두리 */
+}
+.camp-input {
+  border-bottom: 1px solid rgba(88, 86, 86, 0.3);
+}
+// 로딩 화면때돌거
+.CampSpinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #09f;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,199 @@
+// shopListComponent
+.shopList_group {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 2px 0px;
+  .shopList_area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin: 0 auto;
+    padding: 24px;
+    .shopList_wrap {
+      min-width: 226px;
+      padding: 2px;
+      cursor: pointer;
+    }
+  }
+}
+.nboardList_group {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 100px;
+  .nboardList_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    margin: 24px auto 0;
+    width: 90%;
+    max-width: 1000px;
+    border-top: 1px solid #979797;
+    .nboardList_wrap {
+      width: 100%;
+      height: 100%;
+      min-width: 226px;
+      cursor: pointer;
+      border: 0.5px solid #dadada;
+    }
+  }
+}
+.nboardList_index {
+  width: 100%;
+  min-width: 226px;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  line-height: 50px;
+  font-family: "NanumSquareRound";
+  font-weight: bold;
+  border-left: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  background-color: #efefef;
+  .nboardList_nbno {
+    width: 50px;
+    text-align: center;
+    border-right: 1px solid #dadada;
+  }
+  .nboardList_title {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #dadada;
+  }
+  .nboardList_writer {
+    min-width: 200px;
+    text-align: center;
+    border-right: 1px solid #dadada;
+  }
+  .nboardList_time {
+    min-width: 150px;
+    text-align: center;
+  }
+}
+.shopList_box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  .shopList_info {
+    margin: 4px; /* 0.25rem */
+    padding: 8px; /* 0.5rem */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.nboardList_box {
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  .nboardList_nbno {
+    width: 50px;
+    height: 100%;
+    line-height: 60px;
+    font-size: 20px;
+    text-align: center;
+    border-right: 1px solid #dadada;
+  }
+  .nboardList_title {
+    height: 100%;
+    line-height: 60px;
+    flex: 1;
+    font-size: 18px;
+    padding-left: 16px;
+    border-right: 1px solid #dadada;
+  }
+  .nboardList_writer {
+    height: 100%;
+    line-height: 60px;
+    min-width: 200px;
+    font-size: 16px;
+    text-align: center;
+    border-right: 1px solid #dadada;
+  }
+  .nboardList_time {
+    height: 100%;
+    line-height: 60px;
+    min-width: 150px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+.shopList_thum {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+}
+.shopList_thum img {
+  margin: auto;
+  border-radius: 6px;
+  width: 300px;
+  transition: transform 0.3s, filter 0.3s;
+}
+.shopList_thum:hover img {
+  transform: scale(1.2); /* 이미지 확대 */
+  border-radius: 6px;
+}
+.shopList_thum::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-radius: 6px;
+  transition: opacity 0.3s;
+  opacity: 0;
+  z-index: 2;
+}
+.shopList_thum:hover::before {
+  opacity: 1;
+  border-radius: 6px;
+}
+.shopList_sum {
+  bottom: 0;
+  font-weight: bold;
+  margin-top: 4px;
+  .shopList_pname {
+    padding: 4px;
+    font-size: 13px;
+    font-family: "NanumSquareRound";
+    text-align: left;
+    color: rgba(38, 36, 36, 0.845);
+  }
+  .shopList_price {
+    padding: 4px;
+    font-size: 15px;
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: right;
+  }
+}
+.shopList_btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 24px;
+  .shopList_addBtn {
+    width: 150px;
+    height: 60px;
+    margin: 4px;
+    text-align: center;
+    line-height: 60px;
+    font-family: Verdana;
+    font-size: 18px;
+    color: #000;
+    background: #fff;
+    border: 1px solid #efefef;
+    margin-right: 5%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

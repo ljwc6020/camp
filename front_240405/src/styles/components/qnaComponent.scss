@@ -1,0 +1,112 @@
+.qnaList-group {
+  margin-top: 10px;
+  width: 90%;
+  .qnaList-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.qnaList-wrap {
+  width: 100%;
+  margin: 8px;
+  padding: 8px;
+  border-bottom: 1px solid #eaeced;
+  .qnaList-box {
+    cursor: pointer;
+  }
+}
+.qnaList-index {
+  display: flex;
+  width: 100%;
+  margin: 0 16px;
+  padding: 8px;
+  text-align: center;
+  font-family: "NanumSquareRound";
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom: 1px solid #eaeced;
+  li {
+    margin: 0 4px;
+    padding: 0 8px;
+  }
+}
+.qnaList-content,
+.qnaRead-content {
+  display: flex;
+  width: 100%;
+  font-family: "NanumSquareRound";
+  font-size: 14px;
+  .qnaList-answered {
+    font-size: 12px;
+  }
+}
+.qnaList-qno {
+  width: 50px;
+  margin: 4px;
+  padding: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+.qnaList-answered {
+  width: 80px;
+  margin: 4px;
+  padding: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+.qnaRead-box {
+  width: 100%;
+  display: flex;
+  margin-left: 146px;
+  padding-top: 8px;
+  border-top: 1px solid #eaeced;
+}
+.qnaList-question,
+.qnaRead-answer {
+  flex: 1;
+  margin: 4px;
+  padding: 4px;
+}
+.qnaRead-answer {
+  min-height: 75px;
+}
+.qnaList-authorName,
+.qnaRead-answerer {
+  width: 200px;
+  text-align: center;
+  margin: 4px;
+  padding: 4px;
+}
+.qnaList-askedAt,
+.qnaRead-answeredAt {
+  width: 150px;
+  margin: 4px;
+  padding: 4px;
+  font-size: 12px;
+}
+
+// 버튼
+.qnaList-btn,
+.qnaRead-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 24px;
+  .qnaList-addBtn,
+  .qnaRead-modifyBtn {
+    width: 75px;
+    height: 30px;
+    margin: 4px;
+    text-align: center;
+    line-height: 30px;
+    font-family: Verdana;
+    font-size: 14px;
+    color: #000;
+    background: #fff;
+    border: 1px solid #efefef;
+    margin-right: 5%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

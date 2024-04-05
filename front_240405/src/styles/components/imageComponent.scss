@@ -1,0 +1,38 @@
+.img-search-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  label {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  input {
+    display: none;
+  }
+}
+.img-search-prediction {
+  text-align: center;
+  width: 100%;
+  p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 18px;
+    width: 100%;
+    button {
+      width: 200px;
+      background-color: rgba(75, 75, 73, 0.7);
+      font-family: "Noto Sans KR", sans-serif;
+      font-weight: normal;
+    }
+  }
+}

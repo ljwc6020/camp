@@ -1,0 +1,484 @@
+/*reset*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 80px;
+}
+
+/*main1*/
+
+.main1_bg {
+  width: 100%;
+  height: 700px;
+  background: url("../../img/bg2.jpg") top no-repeat;
+  background-size: cover;
+  // background: linear-gradient(to right, #3ee7ed, #2eeecb, #4bf9a5);
+  border: 1px solid rgba(210, 210, 210);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main1 {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/*main1 tab-box*/
+
+.tab-box {
+  min-width: 350px;
+  width: 30%;
+  height: 500px;
+  color: rgb(244, 237, 237);
+  background: rgba(55, 53, 53, 0.4);
+  margin-top: 50px;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid rgb(212, 201, 201);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.menu li.active {
+  background: rgba(75, 75, 73, 0.5);
+  color: rgb(244, 237, 237);
+  border: 1px solid rgb(212, 201, 201);
+}
+
+.menu li:hover {
+  cursor: pointer;
+}
+
+.content li {
+  width: 100%;
+  height: 400px;
+  display: none;
+  position: absolute;
+}
+
+.content li.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content li:nth-child(2) input {
+  height: 35px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.upload {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.content li button {
+  height: 40px;
+  background: rgba(75, 75, 73, 0.5);
+  color: rgb(244, 237, 237);
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.content li:nth-child(2) input,
+button {
+  width: 70%;
+}
+
+/*main1 slide*/
+.slide-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50%;
+  height: 500px;
+}
+
+.slide {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(210, 210, 210, 0.5);
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+  .btn-box {
+    display: none;
+  }
+}
+.slide:hover {
+  .btn-box {
+    display: block;
+  }
+}
+
+.slide ul {
+  width: 3000px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.slide-section .btn-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -100%;
+  left: 0;
+}
+
+.slide-section .btn-box button {
+  position: absolute;
+  top: 50%;
+  width: 10%;
+  height: 10%;
+  background: #0000005d;
+  color: #fff;
+  font-size: 1vw;
+  border: none;
+}
+
+.slide-section .btn-box .btn-next {
+  left: 90%;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 20px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1), 1px -1px 0 black,
+    -1px 1px 0 rgba(0, 0, 0, 0.1), 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.slide ul li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slide-section img {
+  width: 100%;
+}
+
+/*main2*/
+.main2_bg {
+  width: 100%;
+  height: 700px;
+  border: 1px solid rgba(210, 210, 210);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main2_title {
+  width: 100%;
+  height: 25%;
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main2_bg ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main2_bg ul li {
+  width: 325px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main2_bg li a {
+  width: 90%;
+  font-size: 1.1rem;
+  font-family: "NanumSquareRound";
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mainProduct_thum {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15%;
+  margin-bottom: 25px;
+}
+
+.main2_bg img {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(210, 210, 210, 0.5);
+  border-radius: 15%;
+  // margin-bottom: 25px;
+  margin: auto;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.main2 li:nth-child(2) img,
+.main2 li:nth-child(3) img {
+  height: 250px;
+}
+
+.mainProduct_thum:hover img {
+  transform: scale(1.2);
+  border-radius: 15%;
+}
+.mainProduct_thum::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-radius: 15%;
+  transition: opacity 0.3s;
+  opacity: 0;
+  z-index: 2;
+}
+.mainProduct_thum:hover::before {
+  opacity: 1;
+  border-radius: 15%;
+}
+
+/*main3*/
+
+.main3_bg {
+  width: 100%;
+  height: 700px;
+  background: url("../../img/bg8.jpg") bottom no-repeat;
+  background-size: cover;
+  border: 1px solid rgba(210, 210, 210);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main3 {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  min-width: 450px;
+  min-height: 400px;
+  padding-top: 35%;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(210, 210, 210, 0.5);
+}
+
+.right {
+  width: 45%;
+  min-width: 500px;
+  height: auto;
+  background: rgba(30, 29, 29, 0.65);
+  display: flex;
+  flex-direction: column;
+}
+
+.right p {
+  text-decoration: underline;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 1.45rem;
+  margin-bottom: 20px;
+  color: rgb(243, 239, 239);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1), 1px -1px 0 black,
+    -1px 1px 0 rgba(0, 0, 0, 0.1), 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.right:nth-child(2) {
+  height: 450px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-wrap: nowrap;
+  color: rgb(244, 237, 237);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1), 1px -1px 0 black,
+    -1px 1px 0 rgba(0, 0, 0, 0.1), 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.right a {
+  font-size: 0.9rem;
+  font-family: "Courier New", Courier, monospace;
+  // font-family: "Do Hyeon", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(244, 237, 237);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 25px;
+}
+
+.right ul li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right img {
+  height: 220px;
+  min-width: 225px;
+  /* height: 200px; 높이는 무조건 px로 */
+  border: 1px solid rgba(210, 210, 210, 0.5);
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* 반응형 */
+@media (max-width: 932px) {
+  /* main1 */
+  .main1_bg {
+    height: 100%;
+    padding: 50px 0;
+  }
+
+  .main1 {
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .tab-box {
+    width: 80%;
+    margin-top: 60px;
+  }
+
+  .menu li,
+  .content li button {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .upload input {
+    width: 100%;
+  }
+
+  .content li {
+    width: 100%;
+  }
+
+  .slide-section {
+    width: 100%;
+  }
+
+  /* main2 */
+  .main2_bg {
+    height: 100%;
+    padding: 50px 0;
+  }
+
+  .main2 {
+    flex: 1;
+    flex-wrap: wrap; /* 반응형 작동시 자동으로 줄바꿈 */
+  }
+
+  .main2 li {
+    margin: 10 auto 80px;
+  }
+
+  .main2 li:nth-child(2) img,
+  .main2 li:nth-child(3) img {
+    height: 180px;
+  }
+
+  /* main3 */
+  .main3_bg {
+    height: 100%;
+    padding: 50px 0;
+  }
+
+  .main3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left {
+    margin-bottom: 55px;
+    padding-top: 55%;
+  }
+
+  .right img {
+    width: 100%;
+  }
+}

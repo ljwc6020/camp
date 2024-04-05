@@ -1,0 +1,187 @@
+.modify_group {
+  margin: 30px 2px; // mt-10 m-2
+  height: 100%;
+  padding: 24px 100px;
+  font-size: 15px;
+  font-family: "NanumSquareRound";
+  display: flex;
+  flex-direction: column;
+}
+.modify_group > div:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.modify_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .modify_imgArea,
+  .modify_textArea {
+    flex: 1;
+    height: 500px;
+    padding: 30px 0;
+  }
+}
+.modify_imgArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .modify_imgAdd {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    border: 1px dashed #8c8c8c;
+    border-radius: 6px;
+    padding: 15px 0;
+    align-items: center;
+    cursor: pointer;
+    .modify_wrap {
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+    }
+  }
+}
+.modify_imgRemove {
+  width: 100%;
+  height: 40%;
+  border: 1px dashed #8c8c8c;
+  border-radius: 6px;
+  .modify_wrap {
+    width: 100%;
+    height: 100%;
+    .modify-info {
+      min-width: 100px;
+      font-weight: bold;
+      padding-left: 16px;
+      text-align: center;
+    }
+    .modify-content {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.current {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px;
+  gap: 4px;
+  .imageContainer {
+    display: flex;
+    width: auto;
+    height: 100%;
+    border: 1px solid black;
+    position: relative; // 이 부분을 추가해야 합니다.
+    justify-content: center;
+    align-items: center;
+    img {
+      width: auto;
+      height: 80%;
+    }
+    .imgRemoveBtn {
+      /* 버튼에 absolute 위치 설정 */
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 2px; // 상단 여백 조정
+      right: 2px; // 우측 여백 조정
+      background: #000; // 배경색
+      color: #fff; // 글자색
+      border: 1px solid black;
+      cursor: pointer;
+    }
+  }
+}
+.modify_info {
+  font-size: 16px;
+}
+.modify_textArea {
+  align-items: center;
+  justify-content: center;
+}
+.modify_area {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center; // flex justify-center
+  margin: 0 20px;
+}
+.modify_wrap {
+  display: flex;
+  width: 100%; // w-full
+  height: 100%;
+  justify-content: center;
+  align-items: center; // items-stretch
+}
+
+.modify_box {
+  width: 150px;
+  padding: 6px; // p-6
+  text-align: left; // text-right
+  font-weight: bold; // font-bold
+}
+
+input[type="file"] {
+  display: none;
+}
+
+input,
+textarea {
+  width: 100%; // w-4/5
+  padding: 6px; // p-6
+  border: 1px solid #d1d5db; // border-neutral-300
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); // shadow-md
+  font-size: 13px;
+  font-family: "NanumSquareRoundLight";
+  &.resize-y {
+    resize: vertical; // resize-y
+  }
+}
+.shopModify_btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  .shopModify_deleteBtn,
+  .shopModify_modifyBtn,
+  .shopModify_listBtn {
+    width: 150px;
+    height: 60px;
+    margin: 4px;
+    text-align: center;
+    // line-height: 60px;
+    font-family: Verdana;
+    font-size: 18px;
+    color: #000;
+    background: #fff;
+    border: 1px solid #efefef;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.image_upload_preview {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: auto;
+    height: 80%;
+  }
+  label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,70 @@
+.listPageWrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.listPageBg {
+  width: 100%;
+  height: 300px;
+  background: url(../../img/bg9.jpg) center no-repeat;
+  background-size: cover;
+  font-size: 40px;
+  font-family: "Gugi", sans-serif;
+  font-weight: 400;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 80px;
+}
+
+.listPageBg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.listPageBg span {
+  z-index: 1;
+}
+
+.listComponentWrap {
+  width: 100%;
+  margin: 10px 2px 0px;
+  background: snow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 80px;
+}
+
+.listBoard {
+  width: 90%;
+  background: rgb(237, 236, 230);
+  border: 1px solid rgba(235, 178, 7, 0.408);
+  border-radius: 5%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.listPageBtn {
+  width: 10%;
+  min-width: 150px;
+  height: 50px;
+  background: rgb(235, 178, 7);
+  border-radius: 5%;
+  font-size: 1.1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  color: rgb(231, 223, 223);
+}

@@ -1,0 +1,121 @@
+.add_group {
+  margin: 30px 2px; // mt-10 m-2
+  height: 100%;
+  padding: 4px; // p-4
+  font-size: 15px;
+  font-family: "NanumSquareRound";
+  display: flex;
+  flex-direction: column;
+}
+.add_group > div:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.add_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .add_imgArea,
+  .add_textArea {
+    flex: 1;
+    width: auto;
+    height: 500px;
+  }
+  .add_textArea {
+    padding: 30px 0;
+  }
+}
+.add_imgArea {
+  border: 1px dashed #8c8c8c;
+  border-radius: 6px;
+  cursor: pointer;
+  .add_wrap {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    .image_upload_preview {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      width: auto;
+      height: 80%;
+    }
+    label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+}
+.add_textArea {
+  align-items: center;
+  justify-content: center;
+}
+
+.add_area {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  justify-content: center; // flex justify-center
+  margin: 0 20px;
+}
+.pdesc {
+  min-height: 150px;
+}
+input[type="file"] {
+  display: none;
+}
+
+.add_box {
+  width: 150px;
+  padding: 6px; // p-6
+  text-align: left; // text-right
+  font-weight: bold; // font-bold
+}
+
+input,
+textarea {
+  width: 100%; // w-4/5
+  padding: 6px; // p-6
+  border: 1px solid #d1d5db; // border-neutral-300
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); // shadow-md
+  font-size: 13px;
+  font-family: "NanumSquareRoundLight";
+  &.resize-y {
+    resize: vertical; // resize-y
+  }
+}
+
+.shopList_btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  .shopList_addBtn {
+    width: 150px;
+    height: 60px;
+    margin: 4px;
+    text-align: center;
+    // line-height: 60px;
+    font-family: Verdana;
+    font-size: 18px;
+    color: #000;
+    background: #fff;
+    border: 1px solid #efefef;
+    margin-right: 5%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,172 @@
+.addModal {
+  display: none; /* 모달은 기본적으로 숨겨진 상태 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 배경 어둡게 */
+  z-index: 9999; /* 다른 요소 위에 모달 표시 */
+}
+.addModal.show {
+  display: block;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* show 클래스가 추가되면 모달이 표시됨 */
+}
+
+.addReview-group,
+.addQna-group {
+  margin: 50px auto; /* 중앙 정렬 */
+  width: 500px;
+  background-color: snow;
+  border-radius: 6px;
+  overflow-y: auto;
+  .addReview-area,
+  .addQna-area {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+}
+.addReview-group {
+  height: 650px;
+}
+.addQna-group {
+  height: 500px;
+}
+
+.addReview-header,
+.addQna-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 8px;
+  button {
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    margin-right: 15px;
+  }
+  .addReview-content,
+  .addQna-content {
+    width: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+}
+
+.addReview-body,
+.addQna-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  align-items: center;
+  .addReview-wrap,
+  .addQna-wrap {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    .addReview-info,
+    .addQna-info {
+      font-family: "NanumSquareRound";
+      font-size: 18px;
+      font-weight: bold;
+      min-width: 150px;
+      padding: 8px;
+    }
+    .reviewText,
+    .question {
+      height: 150px;
+      background-color: #efefef;
+    }
+    .addReview-content,
+    .addQna-content {
+      width: 95%;
+      min-height: 40px;
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #b5b5b5;
+    }
+    .reviewer,
+    .authorName {
+      background-color: #efefef;
+    }
+  }
+  .addQna-box {
+    width: 100%;
+  }
+}
+.addReview-box {
+  width: 95%;
+  height: 100%;
+}
+.imgContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #b5b5b5;
+  background-color: #fff;
+  cursor: pointer;
+  input {
+    display: none;
+  }
+  label {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 150px;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: auto;
+    height: 80%;
+  }
+}
+
+.addReview-footer,
+.addQna-footer {
+  position: relative;
+  width: 100%;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: snow;
+  button {
+    width: 150px;
+    height: 60px;
+    padding: 8px 16px;
+    margin: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  .addReview-addBtn,
+  .addQna-addBtn {
+    background-color: #8c8c8c;
+    color: #fff;
+  }
+  .addReview-closeBtn,
+  .addQna-closeBtn {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #b5b5b5;
+  }
+}

@@ -1,0 +1,42 @@
+.addPageWrap {
+  width: 100%;
+  height: 700px;
+  background: url("../../img/bg10.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 80px;
+}
+
+.addPageSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputBundle {
+  width: 50%;
+  height: 50%;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.inputBundle input,
+.inputBundle div:nth-child(2) div:nth-child(2) {
+  border: 3px solid rgb(235, 178, 7);
+}
+
+.addPageBtnWrap {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}

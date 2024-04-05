@@ -1,0 +1,128 @@
+.reviewList-group {
+  width: 90%;
+  margin-top: 10px;
+  .reviewList-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.reviewList-wrap {
+  width: 100%;
+  margin: 8px;
+  padding: 8px;
+  border-bottom: 1px solid #eaeced;
+  .reviewList-box {
+    cursor: pointer;
+  }
+}
+.reviewList-content {
+  display: flex;
+  width: 100%;
+  font-family: "NanumSquareRound";
+  font-size: 14px;
+  .list {
+    margin: 4px;
+    padding: 4px;
+  }
+}
+.reviewList-score {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+}
+.reviewList-reviewText {
+  flex: 1;
+  margin: 4px;
+  padding: 4px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.reviewList-reviewer {
+  width: 300px;
+}
+.reviewList-registeredAt {
+  width: 150px;
+  font-size: 12px;
+}
+.reviewList-btn,
+.reviewRead-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 24px;
+  .reviewList-addBtn,
+  .reviewRead-modifyBtn {
+    width: 75px;
+    height: 30px;
+    margin: 4px;
+    text-align: center;
+    line-height: 30px;
+    font-family: Verdana;
+    font-size: 14px;
+    color: #000;
+    background: #fff;
+    border: 1px solid #efefef;
+    margin-right: 5%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.reviewRead-group {
+  margin-top: 10px;
+  .reviewRead-area {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.reviewRead-wrap {
+  display: flex;
+  li {
+    padding-left: 8px;
+    font-family: "NanumSquareRound";
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+.reviewRead-box {
+  width: 75%;
+  padding: 8px 8px 50px;
+  font-family: "verdana";
+  font-size: 13px;
+}
+.reviewRead-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 75%;
+  padding: 4px;
+  img {
+    width: 120px;
+    height: 0 auto;
+    cursor: pointer;
+  }
+}
+.reviewRead-noImage {
+  display: none;
+}
+.imageContainer {
+  border: 1px solid black;
+  position: relative; // 이 부분을 추가해야 합니다.
+  margin: 8px;
+}
+/* 버튼에 absolute 위치 설정 */
+.imgRemoveBtn {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 2px; // 상단 여백 조정
+  right: 2px; // 우측 여백 조정
+  background: #000; // 배경색
+  color: #fff; // 글자색
+  border: 1px solid black;
+  cursor: pointer;
+}

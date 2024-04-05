@@ -1,0 +1,16 @@
+.shopList_section,
+.nboardList_section,
+.cart_section {
+  width: 100%;
+  display: flex;
+  margin-bottom: 100px;
+  // justify-content: space-around;
+}
+.cart_index {
+  width: 100%;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: none;
+}
