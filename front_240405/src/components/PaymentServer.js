@@ -12,7 +12,7 @@ app.post("/confirm", function (req, res) {
 
   // 토스페이먼츠 API는 시크릿 키를 사용자 ID로 사용하고, 비밀번호는 사용하지 않습니다.
   // 비밀번호가 없다는 것을 알리기 위해 시크릿 키 뒤에 콜론을 추가합니다.
-  const widgetSecretKey = "test_sk_oEjb0gm23P4bMpKL2yPj3pGwBJn5";
+  const widgetSecretKey = "본인의 키 입력";
   const encryptedSecretKey =
     "Basic " + Buffer.from(widgetSecretKey + ":").toString("base64");
 

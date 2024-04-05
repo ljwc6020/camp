@@ -26,7 +26,7 @@ export function CheckoutPage() {
   useEffect(() => {
     (async () => {
       const paymentWidget = await loadPaymentWidget(
-        "test_ck_ORzdMaqN3w9ZDjea2G2Pr5AkYXQG",
+        "본인의 키 입력",
         ANONYMOUS
       );
 

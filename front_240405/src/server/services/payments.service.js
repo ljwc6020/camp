@@ -3,7 +3,7 @@ const fetch = require("node-fetch");
 
 // TODO: 개발자센터에 로그인해서 내 결제위젯 연동 키 > 시크릿 키를 입력하세요. 시크릿 키는 외부에 공개되면 안돼요.
 // @docs https://docs.tosspayments.com/reference/using-api/api-keys
-const secretKey = "test_sk_oEjb0gm23P4bMpKL2yPj3pGwBJn5";
+const secretKey = "본인의 키 입력";
 
 async function confirmPayment(paymentInfo = {}) {
   const { paymentKey, orderId, amount } = paymentInfo;
