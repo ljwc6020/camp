@@ -1,6 +1,7 @@
 # 프로젝트 이름
-뷰캠프<br>
-# Petching
+
+# 뷰캠프
+
 이미지 분석을 통해 이미지에 맞는 캠핑장을 추천해주는 서비스입니다. <br>
 편리한 캠핑장 예약으로 국내 캠핑시장 활성화, 사이트 이용자 유치에 큰 도움이 될것입니다.<br>
 시연 영상 : <br>
@@ -8,30 +9,19 @@
 <br>
 
 ## 1. 제작 기간 , 참여 인원
- - 2024.03.05~2024.03.27
- - 4명
- <br>
 
- ## 2. 사용 기술
-  - Back-end
-  - java17
-  - Spring Boot 3.2.3
-  - Spring web MVC
-  - Spring data JPA
-  - jwt
-  - MySQL
-  - Thymleaf 3.1.0
+- 2024.03.05~2024.03.27
+- 4명
+  <br>
 
-  - Front-end
-  - HTML 5
-  - CSS3
-  - JavaScript
-  - Jquery
-  - React
-  - Redux
-  - Redux-toolkit
+## 2. 사용 기술
+
+- Back-end: java17, Spring Boot 3.2.3, Spring web MVC, Spring data JPA, jwt, MySQL, Thymleaf 3.1.0
+
+- Front-end: HTML 5, CSS3, JavaScript, Jquery, React, Redux, Redux-toolkit
 
   <br>
+
 ## 3. 주요 기능
 
 - 이 프로젝트는 RESTful API를 이용해서 만들었습니다.
@@ -43,7 +33,7 @@
 - 장바구니 - 장바구니에 담은 목록 확인과 장바구니 물건 구매
 - 챗봇 - 원하는 페이지로 이동과 상품 검색 기능
 - 로그인,회원가입 페이지 - 로그인과 회원가입
-<br>
+  <br>
 
 ## 4. 분석 패키지 구조도
 
@@ -67,5 +57,5 @@
 <br>
 
 ## 주의사항
-- 저작권 문제로 이미지는 전부 삭제했습니다. 또한 개인정보가 들어간
-- 서비스키 같은 데이터는 전부 지웠습니다.
+
+- 저작권 문제로 이미지는 전부 삭제했습니다. 또한 개인정보가 들어간 서비스키 같은 데이터는 전부 지웠습니다.
